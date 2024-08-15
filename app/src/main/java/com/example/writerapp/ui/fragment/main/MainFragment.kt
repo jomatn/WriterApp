@@ -32,6 +32,7 @@ class MainFragment : Fragment() {
         btnStories.setOnClickListener { navigateToListFragment("stories") }
         btnCharacters.setOnClickListener { navigateToListFragment("characters") }
         btnLocations.setOnClickListener { navigateToListFragment("locations") }
+        btnNew.setOnClickListener {  }
     }
 
     private fun navigateToListFragment(itemType: String) {

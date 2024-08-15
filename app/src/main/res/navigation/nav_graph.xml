@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_mainFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_changeFragment"
+            app:destination="@id/changeFragment" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -34,5 +37,14 @@
             app:argType="integer"
             android:id="@+id/action_detailFragment_to_listFragment"
             app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.writerapp.ui.fragment.change.ChangeFragment"
+        android:label="fragment_change"
+        tools:layout="@layout/fragment_change" >
+        <action
+            android:id="@+id/action_changeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
